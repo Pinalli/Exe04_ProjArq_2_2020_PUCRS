@@ -10,5 +10,7 @@ import java.util.ArrayList;
 //interface para o carrinho
 public interface Observer {
     
-    void adicionouProduto(ArrayList<String> produtos);
+    public void inseriu(ArrayList<String> produto);
+
+    
 }

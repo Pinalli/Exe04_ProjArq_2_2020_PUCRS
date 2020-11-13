@@ -1,3 +1,5 @@
+package Singleton;
+
 
 
 /* O projeto deverá ser organizado usando o padrão arquitetural MVC ou Camadas.

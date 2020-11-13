@@ -1,24 +1,52 @@
 package Observer;
 
+import java.util.ArrayList;
+
+
+
 /**
  *
  * @author AlbertoPinalli
  */
-//o carrinho
+//Classe observada 
 public class ConcreteObserver {
 
-    Subject produto;
+    public ArrayList<String> produto = new ArrayList<>();
+    public ArrayList<Observer> obs = new ArrayList<>();
 
     ConcreteObserver() {
-        produto = new Subject();
+        produto = new ArrayList<>();
     }
 
     public void adicionar(String p) {
-        this.produto.adicionar(p);
+        produto.add(p);
+        notificarObserver();
     }
 
-    public void consultarProdutos() {
-        produto.toString();
+    // public void consultarProdutos() {
+    // produto.toString();
+    // }
+    public void addObserver(Observer o) {
+        if (!obs.contains(o)) {
+            obs.add(o);
+        }
     }
 
+    public void removeObserver(Observer o) {
+        obs.remove(o);
+    }
+
+    public void notificarObserver() {
+
+        for (Observer o : obs) {
+            o.inseriu(produto);
+
+        }
+
+    }
+
+    @Override
+    public String toString() {
+        return "Lista de Produtos no carrinho:\n" + produto;
+    }
 }

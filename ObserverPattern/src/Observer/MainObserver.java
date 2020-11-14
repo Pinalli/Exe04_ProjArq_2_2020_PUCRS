@@ -1,5 +1,5 @@
 /*
-1 - singleton, para garantir um único carrinho de compras para um cliente;
+
 2 - observer, atualização do carrinho a cada produto selecionado pelo cliente;
 3 - strategy e factory para implementar as diferentes formas de pagamento e
 o acesso ao cliente a estas informações (cartão de débito, cartão de 
@@ -26,7 +26,7 @@ public class MainObserver {
 
         while (true) {
             Scanner sc = new Scanner(System.in);
-            System.out.println("Escolha um produto para adicionar ao carrinho");
+            System.out.println("Adicione um produto ao carrinho");
             String p = sc.nextLine();
             c1.adicionar(p);
         }

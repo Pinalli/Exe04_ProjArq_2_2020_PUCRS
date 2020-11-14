@@ -1,6 +1,6 @@
 package Singleton;
 
-
+//1 - singleton, para garantir um único carrinho de compras para um cliente;
 /**
  *
  * @author AlbertoPinalli

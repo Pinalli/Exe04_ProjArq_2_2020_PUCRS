@@ -31,12 +31,6 @@ public class MainObserver {
             c1.adicionar(p);
         }
 
-        /// c1.toString();
-        // p.adicionar("Memória 3GB");
-        // p.adicionar("Tenis");
-        // System.out.println(c1.toString());
-        /// c1.toString();
-        // p.toString();
-        // System.out.println("\n");
+      
     }
 }

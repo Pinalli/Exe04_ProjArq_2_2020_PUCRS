@@ -8,7 +8,7 @@ public class CartaoDebito implements Pagamento {
 
     @Override
     public double calculaPreco(double valor) {
-        return 0;
+        return valor;
     }
 
 }

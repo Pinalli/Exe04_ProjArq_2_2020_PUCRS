@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Exe04_ProjArq_2_2020_PUCRS.iml" filepath="$PROJECT_DIR$/.idea/Exe04_ProjArq_2_2020_PUCRS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FacadePattern/FacadePattern.iml" filepath="$PROJECT_DIR$/FacadePattern/FacadePattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ObserverPattern/ObserverPattern.iml" filepath="$PROJECT_DIR$/ObserverPattern/ObserverPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SingletonPattern/SingletonPattern.iml" filepath="$PROJECT_DIR$/SingletonPattern/SingletonPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StrategyPattern/StrategyPattern.iml" filepath="$PROJECT_DIR$/StrategyPattern/StrategyPattern.iml" />
+    </modules>
+  </component>
+</project>

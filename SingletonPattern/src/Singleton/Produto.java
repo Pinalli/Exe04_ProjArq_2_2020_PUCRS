@@ -1,3 +1,4 @@
+
 package Singleton;
 
 import java.util.ArrayList;
@@ -6,6 +7,7 @@ import java.util.ArrayList;
  *
  * @author AlbertoPinalli
  */
+
 public class Produto {
 
     ArrayList<String> produto;
@@ -24,7 +26,7 @@ public class Produto {
             System.out.println(p);
         });
         return null;
-           
+
     }
-    
+
 }

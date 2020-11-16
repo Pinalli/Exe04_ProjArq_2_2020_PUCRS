@@ -1,7 +1,5 @@
 package Singleton;
 
-
-
 /* O projeto deverá ser organizado usando o padrão arquitetural MVC ou Camadas.
 O cenário de desenvolvimento é um sistema de e-commerce, onde clientes podem
 consultar produtos, inserir produtos em um carrinho de compras e finalizar esta compra.
@@ -30,8 +28,8 @@ public class Carrinho {
         this.produto.adicionar(p);
     }
 
-   public void consultarProdutos() {
-    produto.toString();
-  }
+    public void consultarProdutos() {
+        produto.toString();
+    }
 
 }

@@ -8,7 +8,7 @@ public class Boleto implements Pagamento {
 
     @Override
     public double calculaPreco(double valor) {
-        return (valor * 0.25) + 7;
+        return (valor * 0.20) + 5;
     }
 
 }

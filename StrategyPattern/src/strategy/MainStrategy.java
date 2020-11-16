@@ -17,7 +17,7 @@ public class MainStrategy {
 
         Carrinho c1 = new Carrinho();
 
-        while(!finalizouCompra) {
+        while (!finalizouCompra) {
             selecionouOpcao = false;
             Scanner sc = new Scanner(System.in);
             System.out.print("Informe o nome do produto: ");
@@ -32,7 +32,10 @@ public class MainStrategy {
                 int opcao = sc.nextInt();
 
                 switch (opcao) {
-                    case 1: { selecionouOpcao = true; break; }
+                    case 1: {
+                        selecionouOpcao = true;
+                        break;
+                    }
                     case 2: {
                         System.out.println("Selecione a forma de pagamento:");
                         System.out.println("1. PayPal \n2. Cartão de débito \n3. Cartão de crédito"
@@ -41,21 +44,18 @@ public class MainStrategy {
                         TipoPagamento tp = TipoPagamento.values()[opcao - 1];
                         Pagamento pg = tp.valorPag();
 
-                        double precoTotal = pg.calculaPreco(c1.getValorTotal());
-
+                        double precoTotal = pg.calculaPreco(valor);
+                        
                         System.out.println("\n\nCompra finalizada!");
                         c1.printList();
-                        System.out.println("\nValor total a pagar: R$" + precoTotal + "\n");
+                        System.out.println("\nValor total a pagar: R$" + (precoTotal + valor) + "\n");
                         selecionouOpcao = true;
                         finalizouCompra = true;
                         break;
                     }
                 }
             }
-
         }
-
-
 
     }
 

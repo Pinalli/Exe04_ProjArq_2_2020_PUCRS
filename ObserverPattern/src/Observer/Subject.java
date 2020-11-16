@@ -37,9 +37,9 @@ public class Subject implements Observer {
 
     @Override
     public void inseriu(ArrayList<String> produto) {
-        System.out.println("Um item foi inserido!");
-        System.out.println("Atualização do carrinho!");
-        System.out.println("Prdutos no carrinho:  " + produto + "\n");
+        System.out.println("ATUALIZAÇÃO!");
+        System.out.println("Um item foi inserido no carrinho");
+        System.out.println("Lista de produtos:  " + produto + "\n");
 
     }
 

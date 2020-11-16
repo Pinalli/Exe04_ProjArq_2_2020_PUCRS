@@ -1,8 +1,3 @@
-
-
-
-
- 
 package Observer;
 
 import java.util.Scanner;
@@ -24,7 +19,9 @@ public class MainObserver {
             Scanner sc = new Scanner(System.in);
             System.out.println("Adicione um produto ao carrinho");
             String p = sc.nextLine();
+            System.out.println("Produto adicionado\n"+ p);
             c1.adicionar(p);
+           
         }
 
       

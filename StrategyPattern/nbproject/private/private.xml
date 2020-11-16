@@ -2,6 +2,14 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Alberto%20Pinalli/Documents/GitHub/Exe04_ProjArq_2_2020_PUCRS/StrategyPattern/src/payment/CartaoDebito.java</file>
+            <file>file:/C:/Users/Alberto%20Pinalli/Documents/GitHub/Exe04_ProjArq_2_2020_PUCRS/StrategyPattern/src/payment/Pagamento.java</file>
+            <file>file:/C:/Users/Alberto%20Pinalli/Documents/GitHub/Exe04_ProjArq_2_2020_PUCRS/StrategyPattern/src/payment/TipoPagamento.java</file>
+            <file>file:/C:/Users/Alberto%20Pinalli/Documents/GitHub/Exe04_ProjArq_2_2020_PUCRS/StrategyPattern/src/payment/PayPal.java</file>
+            <file>file:/C:/Users/Alberto%20Pinalli/Documents/GitHub/Exe04_ProjArq_2_2020_PUCRS/StrategyPattern/src/payment/CartaoCredito.java</file>
+            <file>file:/C:/Users/Alberto%20Pinalli/Documents/GitHub/Exe04_ProjArq_2_2020_PUCRS/StrategyPattern/src/strategy/MainStrategy.java</file>
+            <file>file:/C:/Users/Alberto%20Pinalli/Documents/GitHub/Exe04_ProjArq_2_2020_PUCRS/StrategyPattern/src/payment/Boleto.java</file>
+        </group>
     </open-files>
 </project-private>

@@ -1,15 +1,14 @@
-
-package pagamento;
+package payment;
 
 /**
  *
  * @author AlbertoPinalli
  */
-public class CartaoDebito implements Ipagamento {
+public class Boleto implements Pagamento {
 
     @Override
     public double calculaPreco(double valor) {
-       return valor;
+        return (valor * 0.25) + 7;
     }
-    
+
 }

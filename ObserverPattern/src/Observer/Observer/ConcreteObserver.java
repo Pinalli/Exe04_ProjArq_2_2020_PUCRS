@@ -2,13 +2,11 @@ package Observer;
 
 import java.util.ArrayList;
 
-
-
 /**
  *
  * @author AlbertoPinalli
  */
-//Classe observada 
+// Classe observada
 public class ConcreteObserver {
 
     public ArrayList<String> produto = new ArrayList<>();
@@ -23,9 +21,6 @@ public class ConcreteObserver {
         notificarObserver();
     }
 
-    // public void consultarProdutos() {
-    // produto.toString();
-    // }
     public void addObserver(Observer o) {
         if (!obs.contains(o)) {
             obs.add(o);
@@ -47,6 +42,6 @@ public class ConcreteObserver {
 
     @Override
     public String toString() {
-        return "Lista de Produtos no carrinho:\n" + produto;
+        return "Lista dos Produtos no carrinho:\n" + produto;
     }
 }

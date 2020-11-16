@@ -1,15 +1,16 @@
 
-package pagamento;
+package payment;
 
 /**
  *
  * @author AlbertoPinalli
  */
-public class PayPal implements Ipagamento {
+public class PayPal implements Pagamento {
 
+    
     @Override
     public double calculaPreco(double valor) {
-        return valor * 0.10;
+        return valor * 0.60;
     }
     
    

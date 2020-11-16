@@ -38,20 +38,23 @@ public class MainStrategy {
                     }
                     case 2: {
                         System.out.println("Selecione a forma de pagamento:");
-                        System.out.println("1. PayPal \n2. Cartão de débito \n3. Cartão de crédito"
-                                + "\n4. Boleto bancário");
+                        System.out.println(
+                                "1. PayPal \n2. Cartão de débito \n3. Cartão de crédito" + "\n4. Boleto bancário");
                         opcao = sc.nextInt();
                         TipoPagamento tp = TipoPagamento.values()[opcao - 1];
                         Pagamento pg = tp.valorPag();
 
                         double precoTotal = pg.calculaPreco(valor);
-                        
+
                         System.out.println("\n\nCompra finalizada!");
                         c1.printList();
                         System.out.println("\nValor total a pagar: R$" + (precoTotal + valor) + "\n");
                         selecionouOpcao = true;
                         finalizouCompra = true;
+                        c1.adicionar(produto, valor);
+                        c1.printList();
                         break;
+
                     }
                 }
             }

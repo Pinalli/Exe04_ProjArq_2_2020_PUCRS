@@ -25,7 +25,7 @@ public class Carrinho {
 
     public void printList() {
         lista.entrySet().forEach(entry -> {
-            System.out.println("Descrição do item:" + entry.getKey() + "\nValor = R$" + entry.getValue());
+            System.out.println("Descrição do item:" + entry.getKey() + "\nValor: R$" + entry.getValue());
         });
     }
 }

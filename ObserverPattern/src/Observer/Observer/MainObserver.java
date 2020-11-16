@@ -22,7 +22,7 @@ public class MainObserver {
             String p = sc.nextLine();
             System.out.println("Produto adicionado: " + p + "\n");
             c1.adicionar(p);
-
+  
         }
 
     }

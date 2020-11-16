@@ -1,10 +1,12 @@
 package payment;
 
- /*
- * @author AlbertoPinalli
- */
+/*
+* @author AlbertoPinalli
+*/
+
+//fabrica de objetos
 public enum TipoPagamento {
-    
+
     PAYPAL {
         @Override
         public Pagamento valorPag() {
@@ -14,19 +16,19 @@ public enum TipoPagamento {
     DEBITO {
         @Override
         public Pagamento valorPag() {
-           return new CartaoDebito();
+            return new CartaoDebito();
         }
     },
     CREDITO {
         @Override
         public Pagamento valorPag() {
-             return new CartaoCredito();
+            return new CartaoCredito();
         }
     },
     BOLETO {
         @Override
         public Pagamento valorPag() {
-             return new Boleto();
+            return new Boleto();
         }
     };
 

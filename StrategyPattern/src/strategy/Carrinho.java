@@ -15,18 +15,22 @@ consultar produtos, inserir produtos em um carrinho de compras e finalizar esta 
 public class Carrinho {
 
     public Map<String, Double> lista = new HashMap<>();
+    public double valorTotal = 0;
 
-    Carrinho() {
-    }
+    Carrinho() {}
 
     public void adicionar(String product, Double preco) {
 
         lista.put(product, preco);
+        valorTotal += preco;
     }
 
     public void printList() {
-        lista.entrySet().forEach(entry -> {
-            System.out.println("Descrição do item:" + entry.getKey() + "\nValor = R$" + entry.getValue());
-        });
+        System.out.println("######## Carrinho ########\n");
+        lista.forEach((key, value) -> System.out.println("Produto: " + key + ", R$" + value));
+    }
+
+    public double getValorTotal() {
+        return valorTotal;
     }
 }

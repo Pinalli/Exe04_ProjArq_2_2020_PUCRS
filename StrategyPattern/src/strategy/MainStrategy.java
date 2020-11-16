@@ -12,26 +12,50 @@ public class MainStrategy {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        boolean finalizouCompra = false;
+        boolean selecionouOpcao;
 
         Carrinho c1 = new Carrinho();
 
-        System.out.println("Informe o produto");
-        String produto = sc.nextLine();
-        System.out.println("Informe o valor");
-        double valor = sc.nextDouble();
-        c1.adicionar(produto, valor);
+        while(!finalizouCompra) {
+            selecionouOpcao = false;
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Informe o nome do produto: ");
+            String produto = sc.nextLine();
 
-        System.out.println("Selecione a forma de pagamento:");
-        System.out.println("(1)PayPal (2)Cartão de débito (3)Cartão de crédito"
-                + " (4)Boleto bancário:");
-        int opcao = sc.nextInt();
-        TipoPagamento tp = TipoPagamento.values()[opcao - 1];
+            System.out.print("Informe o valor do produto: ");
+            double valor = sc.nextDouble();
+            c1.adicionar(produto, valor);
 
-        Pagamento pg = tp.valorPag();
-        double precoTotal = pg.calculaPreco(valor);
-        c1.printList();
-        System.out.println("Valor total a pagar = R$" + (precoTotal + valor));
+            while (!selecionouOpcao) {
+                System.out.println("1. Realizar outra compra \n2. Finalizar carrinho");
+                int opcao = sc.nextInt();
+
+                switch (opcao) {
+                    case 1: { selecionouOpcao = true; break; }
+                    case 2: {
+                        System.out.println("Selecione a forma de pagamento:");
+                        System.out.println("1. PayPal \n2. Cartão de débito \n3. Cartão de crédito"
+                                + "\n4. Boleto bancário");
+                        opcao = sc.nextInt();
+                        TipoPagamento tp = TipoPagamento.values()[opcao - 1];
+                        Pagamento pg = tp.valorPag();
+
+                        double precoTotal = pg.calculaPreco(c1.getValorTotal());
+
+                        System.out.println("\n\nCompra finalizada!");
+                        c1.printList();
+                        System.out.println("\nValor total a pagar: R$" + precoTotal + "\n");
+                        selecionouOpcao = true;
+                        finalizouCompra = true;
+                        break;
+                    }
+                }
+            }
+
+        }
+
+
 
     }
 
